@@ -1,0 +1,255 @@
+.section-holidayActivity {
+  padding-bottom: 36px;
+
+  @media screen and (min-width:$tablet) {
+    padding-bottom: 95px;
+  }
+}
+
+.section-holidayActivity .section__title {
+  margin-bottom: 35px;
+}
+
+.section-holidayActivity__list {
+  @media screen and (min-width:$tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: stretch;
+    align-items: stretch;
+    row-gap: 20px;
+    column-gap: 20px;
+
+    & li:nth-child(1) {
+      @include grid(1, 2, 1, 2);
+    }
+
+    & li:nth-child(2) {
+      @include grid(2, 3, 1, 2);
+
+    }
+
+    & li:nth-child(3) {
+      @include grid(3, 4, 1, 2);
+
+    }
+
+    & li:nth-child(4) {
+      @include grid(1, 2, 2, 3);
+
+    }
+
+    & li:nth-child(5) {
+      @include grid(2, 4, 2, 3);
+
+    }
+
+    & li:nth-child(6) {
+      @include grid(1, 3, 3, 4);
+
+    }
+
+    & li:nth-child(7) {
+      @include grid(3, 4, 3, 4);
+
+    }
+
+  }
+}
+
+.section-holidayActivity__item {
+  @include widthHeight(100%, 120px);
+
+  border-radius: 4px;
+
+  background-color: rgb(160, 190, 187);
+  @extend %mainFlex;
+
+  @media screen and (min-width:$tablet) {
+    height: 310px;
+  }
+}
+
+.section-holidayActivity li:not(:last-child) {
+  @media screen and (max-width:767px) {
+    margin-bottom: 10px;
+  }
+
+}
+
+.section-holidayActivity__item.first {
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../img/mobile/Object-min.jpg);
+  @extend %backgraundIMGstyle;
+  @include paddinLeftRight(60px, 60px);
+
+
+  @media screen and (min-width:$tablet) {
+
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/tablet/Object-min.jpg);
+  }
+
+  @media screen and (min-width:$desktop) {
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/desktop/Bitmap6-min.jpg);
+  }
+
+}
+
+.section-holidayActivity__item.second {
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../img/mobile/Bitmap3-min.jpg);
+  @extend %backgraundIMGstyle;
+
+  @media screen and (min-width:$tablet) {
+
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/tablet/Object1-min.jpg);
+  }
+
+  @media screen and (min-width:$desktop) {
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/desktop/Object-min.jpg);
+  }
+}
+
+.section-holidayActivity__item.third {
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../img/mobile/Bitmap5-min.jpg);
+  @extend %backgraundIMGstyle;
+
+  @media screen and (min-width:$tablet) {
+
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/tablet/Object2-min.jpg);
+  }
+
+  @media screen and (min-width:$desktop) {
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/desktop/Object2-min.jpg);
+  }
+}
+
+.section-holidayActivity__item.fourth {
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../img/mobile/Bitmap6-min.jpg);
+  @extend %backgraundIMGstyle;
+
+  @media screen and (min-width:$tablet) {
+
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/tablet/Object3-min.jpg);
+  }
+
+  @media screen and (min-width:$desktop) {
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/desktop/Object8-min.jpg);
+  }
+}
+
+.section-holidayActivity__item.fifth {
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../img/mobile/Bitmap7-min.jpg);
+  @extend %backgraundIMGstyle;
+
+
+  @media screen and (min-width:$tablet) {
+
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/tablet/Object4-min.jpg);
+  }
+
+  @media screen and (min-width:$desktop) {
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/desktop/Object9-min.jpg);
+  }
+}
+
+.section-holidayActivity__item.sixth {
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../img/mobile/Bitmap8-min.jpg);
+  @extend %backgraundIMGstyle;
+
+  @media screen and (min-width:$tablet) {
+
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/tablet/Object5-min.jpg);
+  }
+
+  @media screen and (min-width:$desktop) {
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/desktop/Object10-min.jpg);
+  }
+}
+
+.section-holidayActivity__item.seventh {
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../img/mobile/Bitmap9-min.jpg);
+  @extend %backgraundIMGstyle;
+
+  @media screen and (min-width:$tablet) {
+
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/tablet/Object6-min.jpg);
+  }
+
+  @media screen and (min-width:$desktop) {
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/desktop/Object11-min.jpg);
+  }
+}
+
+.section-holidayActivity__item__title {
+  @include mainFont(normal, bold, 22px, 27px);
+
+
+
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+
+  color: #ffffff;
+}

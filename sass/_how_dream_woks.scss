@@ -1,0 +1,144 @@
+article {
+  @include padding(64px 20px 16px);
+
+
+  @media screen and (min-width: $tablet) {
+    @include padding(200px 20px 16px);
+
+  }
+}
+
+.section__dreamshareWorks {
+  @include paddinTopBottom(42px, 36px);
+
+
+  @media screen and (min-width: $tablet) {
+    @include paddinTopBottom(57px, 95px);
+
+
+
+    & .section__dreamshareWorks__list {
+      display: flex;
+
+      & .section__dreamshareWorks__item {
+        width: calc((100% - 2 * 20px) / 3);
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 95px;
+
+  }
+}
+
+.section__dreamshareWorks article {
+  @include widthHeight(100%, 100%);
+  
+  background-color: rgb(83, 136, 133);
+  border-radius: 4px;
+}
+
+.section__dreamshareWorks .first-article {
+  background-image: linear-gradient(to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../img/mobile/Bitmap-min.jpg);
+  @extend %backgraundIMGstyle;
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/tablet/Bitmap44-min.jpg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/desktop/Step1image3-min.jpg);
+  }
+}
+
+.section__dreamshareWorks .second-article {
+  background-image: url(../img/mobile/Step1image1-min.jpg);
+  @extend %backgraundIMGstyle;
+
+  @media screen and (min-width: $tablet) {
+    background-image: url(../img/tablet/Step1image1-min.jpg);
+    @include padding(215px 20px 16px);
+
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(../img/desktop/Step1image4-min.jpg);
+    @include padding(215px 20px 16px);
+  }
+}
+
+.section__dreamshareWorks .third-article {
+  background-image: url(../img/mobile/Step1image2-min.jpg);
+  @extend %backgraundIMGstyle;
+
+
+  @media screen and (min-width: $tablet) {
+    background-image: url(../img/tablet/Step1image2-min.jpg);
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url(../img/desktop/Bitmap5-min.jpg);
+  }
+}
+
+.section__dreamshareWorks__step {
+  @extend %mainFlex;
+
+  width: 70px;
+  height: 20px;
+  background: #ff4e50;
+  border-radius: 40px;
+  @include mainFont(normal, normal, 10px, 20px);
+
+  display: flex;
+  align-items: flex-end;
+  letter-spacing: 2px;
+
+  color: #ffffff;
+
+  margin-bottom: 40px;
+}
+
+.section__dreamshareWorks li:not(:last-child) {
+  margin-bottom: 10px;
+
+  @media screen and(min-width:$tablet) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+.section__dreamshareWorks__title {
+  @include mainFont(normal, bold, 24px, 14px);
+
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #ffffff;
+
+  margin-bottom: 20px;
+}
+
+.section__dreamshareWorks__text {
+  font-family: Roboto;
+  @include mainFont(normal, 300, 14px, 14px);
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #e3e3e3;
+}

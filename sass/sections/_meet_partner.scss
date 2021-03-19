@@ -1,0 +1,108 @@
+.section__meetPartner {
+    padding-bottom: 36px;
+
+    @media screen and(min-width:$tablet) {
+        padding-bottom: 95px;
+
+        ul {
+            display: flex;
+        }
+    }
+
+    @media screen and(min-width:$tablet) and (max-width: 1139px) {
+        ul {
+            flex-wrap: wrap;
+            margin: -10px;
+            @include paddinLeftRight(80px, 80px);
+
+        }
+    }
+
+    @media screen and(min-width:$desktop) {
+        ul {
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+}
+
+.section__meetPartner li {
+    @extend %mainFlex;
+    flex-direction: column;
+
+
+    @media screen and(max-width:767px) {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1139px) {
+        width: calc((100% - 40px) / 2);
+
+        @include paddinLeftRight(15px, 15px);
+
+    }
+
+    @media screen and(max-width:1139px) {
+        margin: 10px;
+    }
+
+    @media screen and(min-width:$desktop) {
+        width: calc((100% - 60px) / 4);
+    }
+}
+
+.section__meetPartner__foto {
+    margin-bottom: 17px;
+}
+
+.section__meetPartner__title {
+    margin-bottom: 20px;
+    @include mainFont(normal, bold, 14px, 17px);
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+
+    color: #444444;
+}
+
+.section__meetPartner__text {
+    font-family: Roboto;
+    @include mainFont(normal, 300, 14px, 14px);
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #666666;
+}
+
+.section__meetPartner__button {
+
+    @extend %mainFlex;
+
+    margin-top: 36px;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 280px;
+    height: 40px;
+    @include padding(12px 64px);
+
+    background: #ffffff;
+    border: 2px solid #ff4e50;
+    box-sizing: border-box;
+    border-radius: 40px;
+    @include mainFont(normal, bold, 14px, 17px);
+
+
+    color: #ff4e50;
+
+    @media screen and(min-width:$tablet) {
+        margin-top: 40px;
+        max-width: 180px;
+        @include padding(5px 15px);
+
+    }
+}

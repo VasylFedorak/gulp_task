@@ -1,0 +1,139 @@
+header {
+  max-width: 320px;
+  margin: 0 auto;
+  height: 540px;
+  padding-top: 20px;
+  background-color: rgba(128, 134, 143, 0.774);
+  background-image: url(../img/mobile/Background-min.jpg);
+  @extend %backgraundIMGstyle;
+
+  @media screen and(max-width:320px) {
+    width: 320px;
+  }
+
+  @media screen and(min-width:$tablet) {
+    & {
+      max-width: $tablet;
+      height: 700px;
+      padding-top: 40px;
+      background-image: url(../img/tablet/Background11-min.jpg);
+    }
+  }
+
+  @media screen and(min-width:$desktop) {
+    & {
+      max-width: 1440px;
+      background-image: url(../img/desktop/Background-min.jpg);
+    }
+  }
+}
+
+.header__top {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: $tablet) {
+    height: 36px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 148px;
+  }
+}
+
+.header__top__buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 97px;
+}
+
+.header__top__buttons_style {
+  @include widthHeight(90px, 36px);
+
+  background-color: transparent;
+  border: 1px solid transparent;
+  @include mainFont(normal, normal, 14px, 17px);
+
+
+  @extend %mainFlex;
+
+  color: #ffffff;
+}
+
+.sign-in {
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 40px;
+}
+
+.header__top__logo {
+  @include mainFont(normal, bold, 20px, 24px);
+
+  display: flex;
+  justify-content: center;
+
+  color: #ffffff;
+
+  margin-bottom: 27px;
+}
+
+.header__top__title {
+  @include mainFont(normal, bold, 30px, 37px);
+
+  text-align: center;
+
+  color: #ffffff;
+
+  margin-bottom: 20px;
+
+  @media screen and(min-width:$tablet) {
+    font-size: 52px;
+    line-height: 63px;
+    @include paddinLeftRight(100px, 100px);
+    margin-bottom: 40px;
+  }
+}
+
+.header__top__text {
+  font-family: "Roboto", sans-serif;
+
+  @include mainFont (normal, 300, 18px, 24px);
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  color: #f7f3f2;
+
+  margin-bottom: 15px;
+
+  @media screen and(min-width:$tablet) {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 33px;
+  }
+}
+
+.header__top__mainButton {
+  display: block;
+
+  margin: 0 auto;
+  background-color: rgba(255, 78, 80, 1);
+  border: 1px solid transparent;
+  border-radius: 40px;
+  max-width: 280px;
+  height: 40px;
+  @include padding(12px 47px);
+
+  box-sizing: border-box;
+
+  @include mainFont(normal, bold, 14px, 17px);
+
+
+  color: #ffffff;
+
+  @media screen and(min-width:$tablet) {
+    max-width: 225px;
+    @include padding(12px 17px);
+
+  }
+}

@@ -1,0 +1,112 @@
+footer {
+    @include paddinTopBottom(20px, 20px);
+
+    border-top: 2px solid #FF4E50;
+
+    @media screen and (min-width:$tablet) {
+        @include paddinTopBottom(35px, 25px);
+
+    }
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+
+
+    @media screen and (max-width:767px) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width:$tablet) {
+        flex-direction: row;
+        align-content: center;
+    }
+}
+
+.footer__top__logo {
+    @include mainFont(normal, normal, 16px, 20px);
+
+    display: flex;
+    align-items: flex-start;
+    color: #FF4E50;
+
+    @media screen and (max-width:767px) {
+        margin-bottom: 13px;
+    }
+}
+
+footer h3 {
+    @include mainFont(normal, bold, 14px, 17px);
+    text-align: center;
+
+    color: #444444;
+    margin-bottom: 15px;
+
+    @media screen and (min-width:$tablet) {
+        text-align: start;
+    }
+}
+
+.footer__nav__menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    font-family: Roboto;
+    @include mainFont(normal, 300, 14px, 26px);
+
+    color: #999999;
+
+    @media screen and (min-width:$tablet) {
+        flex-direction: column;
+
+    }
+}
+
+footer ul li:not(:last-child) {
+    @media screen and (max-width:767px) {
+        margin-right: 15px;
+    }
+
+}
+
+footer ul li:nth-child(4) {
+    margin-right: 0;
+}
+
+.footer__nav__menu {
+    @media screen and (max-width:767px) {
+        margin-bottom: 15px;
+    }
+
+}
+
+.footer__copy__logo {
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    @media screen and (max-width:767px) {
+        justify-content: center;
+    }
+
+    @media screen and (max-width:767px) {
+        margin-top: 15px;
+    }
+
+}
+
+.footer__copy__logo p {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    @extend %mainFlex;
+    letter-spacing: 1px;
+
+    color: #CCCCCC;
+    margin-bottom: 10px;
+}
