@@ -1,23 +1,7 @@
-doctype html
-head
-  meta(charset='UTF-8')
-  meta(name='viewport', content='width=device-width, initial-scale=1.0')
-  title Dreamshare
-  link(rel='stylesheet', href='./css/main.min.css')
-header
-  .container
-    .header__top
-      a.header__top__logo(href='./index.html') DREAMSHARE
-      .header__top__buttons
-        button.header__top__buttons_style Log in
-        button.header__top__buttons_style.sign-in Sign up
-    div
-      h1.header__top__title SHARE YOUR HOLIDAY DREAM
-      p.header__top__text
-        | And find the perfect partner to fullfill it
-      button.header__top__mainButton
-        | Find your holiday partner
-main
+extends common/layout 
+
+block content
+  main
   section.section__dreamshareWorks
     .container
       h2.section__title How Dreamshare works?
@@ -124,21 +108,4 @@ main
         form
           input.section-form__email(type='email', name='email', placeholder='Enter your insterests')
         button.header__top__mainButton Search partners
-footer
-  .container
-    nav.footer__nav
-      a.footer__top__logo(href='./index.html') DREAMSHARE
-      .footer__nav__menu
-        h3 Company
-        ul
-          li About
-          li Contact
-          li Press
-          li Blog
-          li Terms and Privacy
-          li Help
-      h3 Partners
-      .footer__copy__logo
-        p DESIGNED BY
-        a(href='')
-          img(src='./img/mobile/Bitmap-min.png', width='110', height='24', alt='лого розробника')
+
