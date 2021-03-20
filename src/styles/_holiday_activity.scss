@@ -81,7 +81,7 @@
   background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-    url(../img/mobile/Object-min.jpg);
+    url(../images/mobile/Object-min.jpg);
   @extend %backgraundIMGstyle;
   @include paddinLeftRight(60px, 60px);
 
@@ -91,14 +91,14 @@
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../img/tablet/Object-min.jpg);
+      url(../images/tablet/Object-min.jpg);
   }
 
   @media screen and (min-width:$desktop) {
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../img/desktop/Bitmap6-min.jpg);
+      url(../images/desktop/Bitmap6-min.jpg);
   }
 
 }
@@ -107,7 +107,7 @@
   background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-    url(../img/mobile/Bitmap3-min.jpg);
+    url(../images/mobile/Bitmap3-min.jpg);
   @extend %backgraundIMGstyle;
 
   @media screen and (min-width:$tablet) {
@@ -115,14 +115,14 @@
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../img/tablet/Object1-min.jpg);
+      url(../images/tablet/Object1-min.jpg);
   }
 
   @media screen and (min-width:$desktop) {
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../img/desktop/Object-min.jpg);
+      url(../images/desktop/Object-min.jpg);
   }
 }
 
@@ -130,7 +130,7 @@
   background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-    url(../img/mobile/Bitmap5-min.jpg);
+    url(../images/mobile/Bitmap5-min.jpg);
   @extend %backgraundIMGstyle;
 
   @media screen and (min-width:$tablet) {
@@ -138,14 +138,14 @@
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../img/tablet/Object2-min.jpg);
+      url(../images/tablet/Object2-min.jpg);
   }
 
   @media screen and (min-width:$desktop) {
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../img/desktop/Object2-min.jpg);
+      url(../images/desktop/Object2-min.jpg);
   }
 }
 
@@ -153,7 +153,7 @@
   background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-    url(../img/mobile/Bitmap6-min.jpg);
+    url(../images/mobile/Bitmap6-min.jpg);
   @extend %backgraundIMGstyle;
 
   @media screen and (min-width:$tablet) {
@@ -161,14 +161,14 @@
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../img/tablet/Object3-min.jpg);
+      url(../images/tablet/Object3-min.jpg);
   }
 
   @media screen and (min-width:$desktop) {
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../img/desktop/Object8-min.jpg);
+      url(../images/desktop/Object8-min.jpg);
   }
 }
 
@@ -176,7 +176,7 @@
   background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-    url(../img/mobile/Bitmap7-min.jpg);
+    url(../images/mobile/Bitmap7-min.jpg);
   @extend %backgraundIMGstyle;
 
 
@@ -185,14 +185,14 @@
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../img/tablet/Object4-min.jpg);
+      url(../images/tablet/Object4-min.jpg);
   }
 
   @media screen and (min-width:$desktop) {
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../img/desktop/Object9-min.jpg);
+      url(../images/desktop/Object9-min.jpg);
   }
 }
 
@@ -200,7 +200,7 @@
   background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-    url(../img/mobile/Bitmap8-min.jpg);
+    url(../images/mobile/Bitmap8-min.jpg);
   @extend %backgraundIMGstyle;
 
   @media screen and (min-width:$tablet) {
@@ -208,14 +208,14 @@
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../img/tablet/Object5-min.jpg);
+      url(../images/tablet/Object5-min.jpg);
   }
 
   @media screen and (min-width:$desktop) {
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../img/desktop/Object10-min.jpg);
+      url(../images/desktop/Object10-min.jpg);
   }
 }
 
@@ -223,7 +223,7 @@
   background-image: linear-gradient(to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-    url(../img/mobile/Bitmap9-min.jpg);
+    url(../images/mobile/Bitmap9-min.jpg);
   @extend %backgraundIMGstyle;
 
   @media screen and (min-width:$tablet) {
@@ -231,14 +231,14 @@
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../img/tablet/Object6-min.jpg);
+      url(../images/tablet/Object6-min.jpg);
   }
 
   @media screen and (min-width:$desktop) {
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url(../img/desktop/Object11-min.jpg);
+      url(../images/desktop/Object11-min.jpg);
   }
 }
 
